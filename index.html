@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supplementary Material - EUSIPCO 2026</title>
+    <title>Supplementary Material - Audio Samples</title>
     <style>
         :root {
             --primary: #2c3e50;
@@ -89,14 +89,31 @@
 <body>
 
 <header>
-    <h1>Enhancing Speech Intelligibility Assessment in Dysarthria via Generative Speech Augmentation and Acoustic Modelling</h1>
+    <h1>Generative Augmentation and Acoustic Modeling for Dysarthric Speech Intelligibility Assessment</h1>
     <p class="authors">Davide Lillini, Carlo Aironi, Lucia Migliorelli, Leonardo Gabrielli and Stefano Squartini</p>
 </header>
 
 <div class="abstract-section">
     <h2>Abstract</h2>
     <div class="abstract">
-        The development of robust automated systems for dysarthria assessment is currently hindered by the scarcity of high-quality labelled pathological datasets. This study proposes a novel framework to address this limitation by integrating Self-Supervised Learning with generative data augmentation. The methodology employs the Wav2Vec 2.0 architecture to extract acoustic features and the StyleTTS 2 model to generate synthetic dysarthric speech samples, conditioned on reference audio from the TORGO database and text prompts from the UA-Speech corpus. A siamese MLP classifier was applied to perform a binary classification of intelligibility levels (Low versus High) under a strict speaker-independent protocol. Experimental results demonstrate that the inclusion of synthetic data systematically improves classification performance across various linguistic units. To quantify the impact of the generated samples relative to the data volume increase, an Augmentation Efficiency Index (AEI) was introduced. The findings confirm that the proposed pipeline effectively mitigates data scarcity issues, with the AEI revealing that specific under-represented units benefit most efficiently from the synthetic integration.
+        The development of robust automated systems for
+        speech-based dysarthria assessment is currently hindered by the
+        scarcity of high-quality labeled pathological datasets. This study
+        proposes a novel framework to address this limitation by integrat-
+        ing self-supervised learning with generative data augmentation.
+        The methodology employs the StyleTTS 2, a diffusion-based
+        generative model to generate synthetic dysarthric speech samples,
+        conditioned on reference audio from the TORGO database and
+        text prompts from the UA-Speech corpus. In parallel, Wav2Vec
+        2.0 is specifically employed to extract and analyze character- and
+        phoneme-level latent representations, systematically identifying
+        which linguistic units serve as the most effective biomarkers for
+        intelligibility binary classification.
+        To quantify the impact of the generated samples, an Aug-
+        mentation Efficiency Index (AEI) was introduced. Experimental
+        results demonstrate that the inclusion of synthetic data improves
+        classification performance across various linguistic units, with the
+        proposed pipeline effectively mitigating data scarcity issues.
     </div>
 </div>
 
@@ -243,7 +260,7 @@
 </section>
 
 <footer>
-    <p>&copy; 2026 - Supplementary material for scientific publication - EUSIPCO 2026</p>
+    <p>&copy; 2026 - Supplementary material for scientific publication</p>
 </footer>
 
 </body>
