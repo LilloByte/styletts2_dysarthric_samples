@@ -97,27 +97,26 @@
     <h2>Abstract</h2>
     <div class="abstract">
         The development of robust automated systems for
-        speech-based intelligibility (and, thus, dysarthria) assessment
+        assessing speech intelligibility levels in patients with dysarthria
         is currently hindered by the scarcity of labeled pathological
-        datasets. This study proposes a novel framework to address this
+        datasets. This study proposes a novel framework addressing this
         limitation by integrating self-supervised learning with generative
-        data augmentation. we employ StyleTTS-2, a diffusion-based
-        generative model to generate synthetic dysarthric speech samples,
-        conditioned on reference audio from the TORGO dataset and text
-        prompts from the UA-Speech dataset. Wav2Vec 2.0 is specifically
-        employed to extract and analyse contextualized representations
-        aligned with character targets and phoneme labels, systematically
-        identifying which linguistic targets serve as the most effective
-        biomarkers for binary intelligibility classification. Experimental
-        results demonstrate that contextualized representations of specific
-        linguistic units yield superior classification accuracy compared
-        to approaches operating on full word- or utterance-level audio.
-        Significantly higher performance is observed on units most de-
-        graded by dysarthric impairment, validating the effectiveness of
-        the proposed fine-grained approach. Furthermore, the inclusion
-        of synthetic data improves performance across various linguistic
-        units, with the proposed pipeline effectively mitigating data
-        scarcity issues.
+        data augmentation. We employ Wav2Vec 2.0, a pre-trained self-
+        supervised speech model, to extract and analyze contextualized
+        representations, aligned with both character and phoneme tar-
+        gets, systematically identifying which linguistic units serve as the
+        most effective biomarkers for binary intelligibility classification.
+        To address data scarcity, we employ StyleTTS-2, a diffusion-based
+        generative model, to generate synthetic dysarthric speech samples
+        conditioned on reference audio from the TORGO dataset and
+        text prompts from the UA-Speech dataset. Experimental results
+        demonstrate that contextualized representations yield superior
+        classification accuracy compared to approaches operating on full
+        word- or utterance-level audio. Significantly higher performance
+        is observed on units most degraded by dysarthric impairment,
+        validating the proposed fine-grained approach. Furthermore,
+        synthetic data augmentation proved to enhance model robustness,
+        effectively mitigating data scarcity issues.
     </div>
 </div>
 
